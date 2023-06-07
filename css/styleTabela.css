@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0px 40px 0px 40px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+#titulo{
+    background-color: #f7d05a;
+    font-weight: bolder;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+#branco{
+    padding: 10px;
+}
+
+#branco2{
+    padding: 0.5px;
+}
+
+#subtitulo{
+    background-color: #44546a;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+}
+
+#chaves{
+    writing-mode: vertical-lr;
+    background-color: #44546a;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    padding: 0px 5px 0px 5px;
+    transform: rotate(180deg)
+}
+
+#corchave1{
+    background-color: #ddebf7;
+}
+#corchave2{
+    background-color: #f2f2f2;
+}
+
+#penaltis{
+    color: red;
+}
+
+#g61{
+    font-weight: bolder;
+    background-color: #aeaaaa;
+    padding: 40px;
+}
+
+#g62{
+    font-weight: bolder;
+    background-color: #ffc000;
+    padding: 40px;
+}
+
+#g63{
+    font-weight: bolder;
+    background-color: #bf8f00;
+    padding: 40px;
+}
+
+#g64{
+    font-weight: bolder;
+    background-color: #ed7d31;
+    padding: 40px;
+}
+
+#g65{
+    font-weight: bolder;
+    background-color: #ff5050;
+    padding: 40px;
+}
+
+#g66{
+    font-weight: bolder;
+    background-color: #92d050;
+    padding: 40px;
+}
+
+#g67{
+    font-weight: bolder;
+    background-color: #00b050;
+    padding: 40px;
+}
+
+#g68{
+    font-weight: bolder;
+    background-color: #00b0f0;
+    padding: 40px;
+}
+
+#g69{
+    font-weight: bolder;
+    background-color: #5b9bd5;
+    padding: 40px;
+}
+
+#g70{
+    font-weight: bolder;
+    background-color: #9966ff;
+    padding: 40px;
+}
+
+#g71{
+    font-weight: bolder;
+    background-color: #bfbfbf;
+    padding: 40px;
+}
+
+#g72{
+    font-weight: bolder;
+    background-color: #ffe699;
+    padding: 40px;
+}
+
+#g73{
+    font-weight: bolder;
+    background-color: #ffff00;
+    padding: 40px;
+}
+
+#g74{
+    font-weight: bolder;
+    background-color: #ff99ff;
+    padding: 40px;
+}
+
+#g75{
+    font-weight: bolder;
+    background-color: #a9d08e;
+    padding: 40px;
+}
+
+#g76{
+    font-weight: bolder;
+    background-color: #8ea9db;
+    padding: 40px;
+}

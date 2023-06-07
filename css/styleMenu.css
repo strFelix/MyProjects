@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+    *{
+        margin: 0 ;
+        padding: 0 ;
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #icon{
+        height: 15px;
+        width: 15px;
+    }
+    
+    /*ul principal do menu*/
+    #menu ul{
+        max-width: 1300px; /*Limita o tamanho do menu*/
+        list-style-type: none;
+        padding: 0;
+        background-color: #F0F1F5; 
+    }
+    
+    #menu{
+        background-color: #F0F1F5;
+    }
+    
+    
+    /*Os Li's da ul menu, alinhados*/
+    #menu ul li{ 
+        display: inline-block;
+        position: relative;
+        margin-left: 0;
+        margin-right: 0;
+        
+    }
+    
+    /*Os a's das li's,*/
+    #menu ul li a{ 
+        color: #424242;
+        padding: 20px;
+        /*Centraliza INFO, deixa o padding clicavel*/
+        display: inline-block;
+        flex-direction: row; 
+        text-decoration: none;
+        border-radius: 3px;
+    }
+    
+    /*Mouse em cima das opçoes*/
+    #menu ul li a:hover{ 
+        background-color: #58af9b46;
+        text-decoration: underline;
+    }
+    
+    #menu ul li:first-child{
+        float: left;
+    }
+
+    #menu ul li:first-child a:hover{
+        text-decoration: none;
+    }
+
+    /*SUBMENU*/
+    #menu ul ul{ 
+        display: none;
+        left: 0;
+        width: 100%;
+        position: absolute;
+    }
+
+    #menu ul li:hover ul{ 
+        display: block;   
+    }
+
+    #menu ul ul li a{ 
+       display: block;
+    }
+
+    
+    #menu ul ul li:hover a { 
+        text-decoration: underline;
+        background-color: #F0F1F5;
+    }
+
+    #menu ul ul li:hover { 
+        text-decoration: underline;
+        background-color: #F0F1F5;
+     }
+   
+   
+   
+
+

@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+*{ /*Resetando css do navegador*/
+    margin: 0;
+    padding: 0;
+    /*Alinha as coisas com as medidas da extremidade da pagina*/
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    display: flex;
+    /*Alinhando a div ao centro, usando metodo parecido com height: 100%;*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ecf0f1;
+}
+
+.conteudo{
+    border-radius: 15px;
+    background-color: white;
+    /*Definindo a altura da div e centralizando com base no definido*/
+    width: 960px;
+    height: 50%;
+    justify-content: space-between; /*Espaça os conteudos*/
+    align-items: center;
+    position: relative; /*Torna o before no tamanho correto, limitando*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo::before{
+    content: "";
+    position: absolute;
+    background-color: #58af9b;
+    width: 40%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.titulo{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.titulo-primario{
+    color: white;
+}
+
+.titulo-secundario{
+    color: #58af9b;
+}
+
+.descricao{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.descricao-primaria{
+    color: white;
+}
+
+.descricao-secundaria{
+    color: #7f8c8d;
+}
+
+.botao{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 10px;
+    padding: 10px 50px; /*top botton - left right*/
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center; /*Alinha ele mesmo ao centro*/
+    border: none; /*Tirando padrao do navegador para botoes*/
+    margin-top: 1rem; /*Espaçamento do botao*/
+}
+
+.botao-primario{
+    background-color: transparent;
+    border: 1px solid white;
+    width: auto;
+}
+
+.botao-primario:hover{
+    background-color: white;
+    color: #58af9b;
+    transition: background-color 0.5s;
+}
+
+.botao-secundario{
+    background-color: #58af9b;
+    border: 1px solid #58af9b;
+}
+
+.botao-secundario:hover{
+    background-color: white;
+    border: 1px solid #58af9b;
+    color: #58af9b;
+    transition: background-color 0.5s;
+}
+
+.primeiro-conteudo{
+    display: flex;
+}
+
+.primeiro-conteudo .segunda-coluna{
+    z-index: 4;
+}
+
+.primeira-coluna{
+    text-align: center;
+    width: 40%; /*Divide os espaços */ 
+    z-index: 3; /*Joga o texto para cima de acordo com o position*/
+}
+
+
+.segunda-coluna{
+    width: 60%; /*Divide os espaços */
+    /*Centralizando na coluna*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes-sociais{
+    margin: 1rem 0; /*Espaçamento para os icones*/
+}
+
+.link-redesocial:not(:first-child){ /*Nao quero que o primeiro elemento tenha margin*/
+    margin-left: 10px;
+}
+
+.link-redesocial:hover .itens-redessocial{
+    background-color: #58af9b;
+    border-color: #58af9b;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+.lista-redesocial{
+    display: flex;
+    list-style-type: none;
+}
+
+.itens-redessocial{
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    /*Centralizando o icone*/
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #95a5a6
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column; /*Muda a direção do flex para colunas*/
+    width: 55%;
+}
+
+.formulario input{
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ecf0f1;
+    
+}
+
+.formulario-input-erro{
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ecf0f1;
+    border: 1px red;
+}
+
+.label-input{
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    border-radius: 5px;
+}
+
+input:-webkit-autofill{ /*Para o google chrome*/
+    -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
+    -webkit-text-fill-color:  black !important; 
+}
+
+.modificador-icone{
+    color: #7f8c8d;
+    padding: 0 5px; /*Apenas nas laterais*/
+
+}
+
+/************* SEGUNDO CONTEUDO **************/
+
+.segundo-conteudo{
+    position: absolute;
+    display: flex;
+}
+
+.segundo-conteudo .primeira-coluna{
+    order: 2; /*mudando a ordem do primeiro conteudo*/
+    z-index: -1; /*joga para tras*/
+}
+
+.segundo-conteudo .segunda-coluna{
+    order: 1; /*mudando a ordem do primeiro conteudo*/
+    z-index: -1; /*joga para tras*/
+}
+
+.esqueceu-senha{
+    color: #34495e;
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+
+/************* TROCA PARA ENTRAR **************/
+
+.entrar-js .primeiro-conteudo .primeira-coluna,
+.entrar-js .primeiro-conteudo .segunda-coluna{
+    z-index: -1;
+}
+
+.entrar-js .segundo-conteudo .primeira-coluna{
+    z-index: 6;
+    animation: aparecer 2s;
+}
+.entrar-js .segundo-conteudo .segunda-coluna{
+    animation: aparecer 2s;
+    z-index: 4;
+}
+
+.entrar-js .conteudo::before{
+    left: 60%;
+    animation: slideEntrar 2.6s;
+    z-index: 5;
+}
+
+/************* TROCA PARA CRIAR **************/
+
+.criar-js .primeiro-conteudo .primeira-coluna{
+    z-index: 6;
+    animation: aparecer 2s;
+}
+.criar-js .primeiro-conteudo .segunda-coluna{
+    animation: aparecer 2s;
+    z-index: 4;
+}
+
+.criar-js .segundo-conteudo .primeira-coluna,
+.criar-js .segundo-conteudo .segunda-coluna{
+    z-index: -1;
+}
+
+.criar-js .conteudo::before{
+    animation: slideCriar 2.6s;
+    z-index: 5;
+}
+
+/************* TROCA FUNDO **************/
+
+.entrar-js .primeiro-conteudo .segunda-coluna{
+    z-index: -1;
+    position: relative;
+    animation: fundo-esquerda 2s;
+}
+
+.criar-js .segundo-conteudo .segunda-coluna{
+    z-index: -1;
+    position: relative;
+    animation: fundo-direita 2s;
+}
+
+
+/************* ANIMAÇÔES **************/
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fundo-direita {
+    from{
+        left: 0;
+        opacity: 0.8;
+        z-index: 5;
+    }
+    30%{
+        left: 80px;
+        opacity: 0.5;
+    }
+
+    60%{
+        left: 90px;
+        opacity: 0.3;
+    }
+
+    90%{
+        left: 100px;
+        opacity: 0.2;
+    }
+    to{
+        left: 110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes fundo-esquerda {
+    from{
+        left: 0;
+        opacity: 0.8;
+        z-index: 5;
+    }
+    30%{
+        left: -80px;
+        opacity: 0.5;
+    }
+
+    60%{
+        left: -90px;
+        opacity: 0.3;
+    }
+
+    90%{
+        left: -100px;
+        opacity: 0.2;
+    }
+    to{
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes slideEntrar {
+    from{
+        left: 0%;
+        width: 40%;
+    }
+
+    50%{
+        left: 0%;
+        width: 100%;
+    }
+
+    to{
+        left: 60%;
+        width: 40%;
+    }
+}
+
+@keyframes slideCriar {
+    from{
+        left: 60%;
+        width: 40%;
+    }
+
+    50%{
+        left: 0%;
+        width: 100%;
+    }
+
+    to{
+        left: 0%;
+        width: 40%;
+    }
+}
+

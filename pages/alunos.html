@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Média Alunos</title>
+    <link rel="shortcut icon" href="../img/icon.ico">
+    <link rel="stylesheet" href="../css/styleAlunos.css">
+    <script src="../js/controllerAlunos.js"></script>
+    
+</head>
+<body> 
+    <div class="centro">
+        <div class="container">
+            <div>
+                <form>
+                    <input class = "input" type="number" id="nota1" placeholder="Digite a 1° nota: " required>
+                    <input class = "input" type="number" id="nota2" placeholder="Digite a 2° nota: " required>
+                    <input type="button" class="botao" value="Calcular"
+                    onclick="media.value = calcular(nota1.value, nota2.value), mencaotxt.value = verMencao()">
+                    <input type="text" class = "input" id="media" placeholder="Média: " readonly>
+                    <input type="text" class = "input" id="mencaotxt" placeholder="Menção: " readonly>
+                </form>
+            </div>
+        </div>
+        <div class="container container-info">
+            <div>
+                <p id="infoTela"></p>
+                <p class="resultado" id="aluno">Alunos: 0</p>
+                <p class="resultado" id="aprovado">Aprovados: 0</p>
+                <p class="resultado" id="reprovado">Reprovados: 0</p>
+                <p class="resultado" id="aprovadoExame">Aprovados por exame: 0</p>
+                <p class="resultado" id="reprovadoExame">Reprovados por exame: 0</p>
+                <input class="botao botao-limpar" style="margin: 1rem;" type="button" value="Limpar" onclick="limpar()">
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

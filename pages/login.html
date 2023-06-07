@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Insere o site para os icones -->
+    <script src="https://kit.fontawesome.com/a10d3cac8e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styleLogin.css">
+    <link rel="shortcut icon" href="../img/icon.ico">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Primeiro container --><!-- Lado 1 -->
+        <div class="conteudo primeiro-conteudo">
+            <div class="primeira-coluna">
+                <h2 class="titulo titulo-primario">Já é cadastrado?</h2>
+                <p class="descricao descricao-primaria">Para se manter conectado com a gente</p>
+                <p class="descricao descricao-primaria">por favor, entre com suas informações!</p>
+                <button id="entrar" class="botao botao-primario">Entrar</button>
+            </div>
+            <!-- Lado 2 -->
+            <div class="segunda-coluna">
+                <h2 class="titulo titulo-secundario">Criar Conta</h2>
+                <div class="redes-sociais">
+                    <ul class="lista-redesocial">
+
+                        <a href="#" class="link-redesocial">
+                            <li class="itens-redessocial">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </li>
+                        </a>
+
+                        <a href="#" class="link-redesocial">
+                            <li class="itens-redessocial">
+                                <i class="fa-brands fa-google-plus-g"></i>
+                            </li>
+                        </a>
+
+                        <a href="#" class="link-redesocial">
+                            <li class="itens-redessocial">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </li>
+                        </a>
+
+                    </ul>
+                </div>
+                <p class="descricao descricao-secundaria">ou use um e-mail para registrar-se:</p>
+                <form class="formulario">
+
+                    <label class="label-input">
+                        <i class="fa-solid fa-user modificador-icone"></i>
+                        <input type="text" placeholder="Nome">
+                    </label>
+
+                    <label class="label-input">
+                        <i class="fa-solid fa-envelope modificador-icone"></i>
+                        <input type="email" placeholder="E-mail">
+                    </label>
+
+                    <label class="label-input">
+                        <i class="fa-solid fa-lock modificador-icone"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+
+                    <button class="botao botao-secundario">Criar</button>
+
+                </form>
+            </div>
+        </div>
+
+        <!-- Segundo container --> <!-- Lado 1 -->
+        <div class="conteudo segundo-conteudo">
+            <div class="primeira-coluna">
+                <h2 class="titulo titulo-primario">Novo por aqui?</h2>
+                <p class="descricao descricao-primaria">Insira seus dados pessoais</p>
+                <p class="descricao descricao-primaria">e comece a sua jornada com a gente!</p>
+                <button id="criar" class="botao botao-primario">Criar conta</button>
+            </div>
+            <!-- Lado 2 -->
+            <div class="segunda-coluna">
+                <h2 class="titulo titulo-secundario">Fazer Login</h2>
+                <div class="redes-sociais">
+                    <ul class="lista-redesocial">
+
+                        <a href="#" class="link-redesocial">
+                            <li class="itens-redessocial">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </li>
+                        </a>
+
+                        <a href="#" class="link-redesocial">
+                            <li class="itens-redessocial">
+                                <i class="fa-brands fa-google-plus-g"></i>
+                            </li>
+                        </a>
+
+                        <a href="#" class="link-redesocial">
+                            <li class="itens-redessocial">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </li>
+                        </a>
+
+                    </ul>
+                </div>
+                <p class="descricao descricao-secundaria">ou use o seu e-mail para fazer Login:</p>
+                
+                <form class="formulario">
+
+                    <label class="label-input">
+                        <i class="fa-solid fa-envelope modificador-icone"></i>
+                        <input type="email" placeholder="E-mail" id="emailLogin" name="emaillogin">
+                    </label>
+
+                    <label class="label-input">
+                        <i class="fa-solid fa-lock modificador-icone"></i>
+                        <input type="password" placeholder="Senha" id="senhaLogin" name="senhalogin">
+                    </label>
+
+                    <a href="#" class="esqueceu-senha">Esqueceu a senha?</a>
+
+                </form>
+                <!-- O botao esta fora do form para conseguir redirecionar -->  
+                <button class="botao botao-secundario" onclick="verificarCredenciais()">Entrar</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/controllerLogin.js"></script>
+
+</body>
+
+</html>
